@@ -5,18 +5,6 @@
     <script src="https://cdn.bootcss.com/flv.js/1.5.0/flv.min.js"></script>
   </head>
   <body>
-    <video id="videoElement"></video>
-    <script>
-      if (flvjs.isSupported()) {
-        var videoElement = document.getElementById("videoElement");
-        var flvPlayer = flvjs.createPlayer({
-          type: "flv",
-          url: "movie/20200315.flv",
-        });
-        flvPlayer.attachMediaElement(videoElement);
-        flvPlayer.load();
-        flvPlayer.play();
-      }
-    </script>
+    <video id="videoElement" src="movie/20200315.flv"></video>
   </body>
 </html>
