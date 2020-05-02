@@ -7,6 +7,7 @@
   <body>
     <video id="videoElement"></video>
     <script>
+      console.log(flvjs.isSupported());
       if (flvjs.isSupported()) {
         var videoElement = document.getElementById("videoElement");
         var flvPlayer = flvjs.createPlayer({
